@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/home.css">
+
+    <title>MYPORTFOLIO</title>
+</head>
+
+<body>
+
+    <div class="temp">
+        <nav class="navbar navbar-expand-lg nav_default navbar-light ">
+            <div class="container-fluid agricon_container ">
+                <a class="navbar-brand mylogo" href="#">
+                    <h6>FPORTFOLIO</h6>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active" onclick="tab(this)">
+                            <div class="nav-link" aria-current="page" href="#home" id="home" onclick="change(this)">Home
+                            </div>
+                        </li>
+                        <li class="nav-item" onclick="tab(this)">
+                            <div href="#portfolio" class="nav-link" id="portfolio" onclick="change(this)">Portfolio
+                            </div>
+                        </li>
+                        <li class="nav-item" onclick="tab(this)">
+                            <div href="#aboutus" class="nav-link" id="aboutus" onclick="change(this)">About</div>
+                        </li>
+                        <li class="nav-item" onclick="tab(this)">
+                            <div href="#education" class="nav-link" id="education" onclick="change(this)">Exposure</div>
+                        </li>
+                        <li class="nav-item" onclick="tab(this)">
+                            <div href="#services" class="nav-link" id="services" onclick="change(this)">Services</div>
+                        </li>
+                        <li class="nav-item" onclick="tab(this)">
+                            <div href="#contactus" class="nav-link" id="contactus" onclick="change(this)">Contact</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="sec  home">
+            <div class="row pt-5 ">
+                <div class="col-6 mt-5">
+                    <h4 class="mt-3">Hello my name is <span class="myname">Funmibi Abibat Iyanda</span></h4>
+                    <h4>I'm a <span>Data Analyst</span></h4>
+                    <p><b>Data Analyst | SQL | Excel | Tableau | Power BI Specialist </b></p>
+                    <p>Analytical and insight driven Data Analyst with proven ability to turn large, messy
+                        datasets into actionable business intelligence. Adept at SQL querying, Excel automation,
+                        dashboard design in Power BI and Tableau, and cross functional collaboration. Specializes
+                        in cleaning, transforming, and visualizing data to support data driven decisions across
+                        marketing, HR, operations, and product teams.
+                    </p>
+                    <a class="btn" id="aboutus" onclick="change2('aboutus')">More Info</a>
+                </div>
+                <div class="col-6 text-center mt-5">
+                    <img class="profile_img" src="images/img.jpeg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="sec hidden aboutus pt-4">
+            <h1>About Me</h1>
+            <span class="one"></span>
+            <span class="two"></span>
+            <div class="row about_sub_sec pt-4">
+                <div class="col-12">
+                    <h3>I'm Funmibi Abibat Iyanda, a <span>Data Analyst.</span></h3>
+                    <p>Detail oriented Data Analyst with 3+ years of experience turning
+                        complex data into actionable insights to drive strategic
+                        decision making. Skilled in SQL, Python, Excel, Power BI,
+                        Tableau, and MongoDB, with a strong foundation in backend
+                        development. Adept at data cleaning, analysis, and visualization,
+                        with a proven ability to solve business problems and communicate
+                        findings clearly to technical and non-technical stakeholders.
+                        Seeking a remote or flexible data role where I can leverage
+                        analytical and technical skills to add measurable value.</p>
+                </div>
+            </div>
+            <div class="row progress_">
+                <div class="col-6 progress_1">
+                    <div class="row">
+                        <div class="col-6">
+                            <ul>
+                                <li>
+                                    <h6>Degree:</h6> <span>Bsc</span>
+                                </li>
+                                <li>
+                                    <h6>Country:</h6> <span>Nigeria</span>
+                                </li>
+                                <li>
+                                    <h6>State:</h6> <span>Abuja</span>
+                                </li>
+                                <!-- <li>
+                                    <h6>Backend Portfolio:</h6> <span>
+                                        <a href="http://">Click me</a>
+                                    </span>
+                                </li> -->
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li>
+                                    <h6>Email:</h6> <span>funmibiiyanda1@gmail.com</span>
+                                </li>
+                                <li>
+                                    <h6>Phone:</h6> <span>+234 903 8504 402</span>
+                                </li>
+                                <li>
+                                    <h6>Frelance:</h6> <span>Available</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-6"><a class="btn dwnlink" href="window.location.href='/CV.pdf'"
+                                        download="Funmibi Abibat Iyanda CV">Download CV</a></div>
+                                <div class="col-6"><a class="btn" id="contactus" onclick="change2('contactus')">Hire
+                                        Me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 progress_2">
+                    <div class="progress_bar">
+                        <label>GitHub</label>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                    </div>
+                    <div class="progress_bar">
+                        <label>Agile</label>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                    </div>
+                    <div class="progress_bar">
+                        <label>Excel</label>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                    </div>
+                    <div class="progress_bar">
+                        <label>Power BI</label>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                    </div>
+                    <div class="progress_bar">
+                        <label>Tableau</label>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                    </div>
+                    <div class="progress_bar">
+                        <label>MongoDB</label>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                    </div>
+                    <div class="progress_bar">
+                        <label>Python</label>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                    </div>
+                    <div class="progress_bar">
+                        <label>Google Sheets</label>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec hidden education">
+            <div class="row">
+                <div class="col-6 education_">
+                    <h1>Education</h1>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="date_"><span class="progress_span"></span> <i
+                                            class="bi bi-calendar"></i>
+                                        <h6>2010</h6>-
+                                        <h6>2016</h6>
+                                    </div>
+                                    <h3>Secondary School</h3>
+                                    <p>I attended Bodija International college Senior Secondary School- Oyo state, i
+                                        attended
+                                        from 2010 to 2016 and got a Senior Secondary School Leaving Certificate after
+                                        graduating
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="date_"><span class="progress_span"></span><i class="bi bi-calendar"></i>
+                                        <h6>2017</h6>-
+                                        <h6>2021</h6>
+                                    </div>
+                                    <h3>University</h3>
+                                    <p>I attended Eastern Mediterranean University - Famagusta Cyprus, i attended
+                                        from 2017 to 2021 and got a Bachelor / B.S. in Computer engineering
+                                        after graduating
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 experience_">
+                    <h1>Work Experience</h1>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="date_"><span class="progress_span"></span><i class="bi bi-calendar"></i>
+                                        <h6>2022-present</h6>
+                                    </div>
+                                    <h3>Data Analyst (SQL, Power BI, Excel Focus) at Fam Global Technology. - Abuja</h3>
+                                    <p> Developed and optimized SQL databases for querying large-scale customer data,
+                                        built automated data pipelines to clean and process raw data for dashboard use,
+                                        reducing manual work by 35%. Designed Power BI dashboards for campaign analytics
+                                        and customer segmentation, increasing targeting accuracy by 40%,
+                                        regularly used Excel (formulas, pivot tables, charts) to generate daily
+                                        and weekly performance reports. </p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="date_"><span class="progress_span"></span><i class="bi bi-calendar"></i>
+                                        <h6>2022</h6>
+                                    </div>
+                                    <h3>Freelance Data Analyst (SQL, Excel, Power BI) at DL&O Solutions Ltd
+                                    </h3>
+                                    <p> Created Excel-based data tracking systems for file management
+                                        efficiency. Developed a Power BI dashboard to visualize document
+                                        activity trends, enabling a 20% improvement in response time.
+                                        Transformed raw platform data into clear insights for management and end-users.
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="date_"><span class="progress_span"></span><i class="bi bi-calendar"></i>
+                                        <h6>2022</h6>
+                                        <h6></h6>
+                                    </div>
+                                    <h3>Junior Data Analyst (SQL, Tableau) at Interra Networks
+                                    </h3>
+                                    <p> Analyzed usage patterns and app behavior using SQL queries
+                                        and Tableau dashboards. Assisted in preparing client-ready
+                                        reports using Excel charts and visual summaries.
+                                        Supported REST API data integration and validation for analytics tools. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec hidden services pt-5">
+            <h1>Services</h1>
+            <span class="one"></span>
+            <span class="two"></span>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="bi bi-laptop"></i>
+                            <h6>Business Insights & Recommendations</h6>
+                            <p>I translate complex datasets into actionable insights,
+                                delivering reports and strategic recommendations that
+                                align with your organizational goals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="bi bi-link"></i>
+                            <h6>SQL Data Analysis </h6>
+                            <p>I extract, manipulate, and analyze data from relational
+                                databases using clean, optimized SQL queries to provide
+                                clear answers to business questions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="bi bi-laptop"></i>
+                            <h6>Data Cleaning & Preparation</h6>
+                            <p>I ensure your raw data is transformed into accurate,
+                                structured, and analysis ready formats using industry
+                                standard tools like Excel, SQL, and Python laying the
+                                foundation for reliable insights.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="bi bi-laptop"></i>
+                            <h6>Data Visualization & Reporting</h6>
+                            <p>I craft interactive dashboards and visual stories using Power BI and Tableau, helping you
+                                uncover trends and make informed decisions at a glance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec hidden portfolio pt-5">
+            <div class="row">
+                <div class="col-4 mb-3 column_" id="1" data-bs-toggle="tooltip" data-bs-placement="right"
+                    data-bs-custom-class="custom-tooltip" data-bs-title="Click to view details">
+                    <div class="img_head">
+                        <p><b>Workforce Attrition Dashboard – Power BI, SQL </b></p>
+                    </div>
+                    <div class="img_box">
+                        <img src="images/img1.png" alt="">
+                    </div>
+                    <div class="img_text">
+                        <p>Analyzed HR data (job role, income, performance) to
+                            identify 3–5 year attrition peaks. Created slicer based
+                            interactive dashboards with calculated columns and DAX for insights. </p>
+                    </div>
+                </div>
+                <div class="col-4 mb-3 column_" id="2" data-bs-toggle="tooltip" data-bs-placement="right"
+                    data-bs-custom-class="custom-tooltip" data-bs-title="Click to view details">
+                    <div class="img_head">
+                        <p><b>Product Sales & Customer Segmentation–PowerBI,Excel</b></p>
+                    </div>
+                    <div class="img_box">
+                        <img src="images/img2.png" alt="">
+                    </div>
+                    <div class="img_text">
+                        <p>Used Excel and SQL to prep and clean sales data; visualized trends across geography and
+                            customer behavior.
+                            Built region-based dashboards with profit margin analysis and customer heatmaps. </p>
+                    </div>
+                </div>
+                <div class="col-4 mb-3 column_" id="3" data-bs-toggle="tooltip" data-bs-placement="right"
+                    data-bs-custom-class="custom-tooltip" data-bs-title="Click to view details">
+                    <div class="img_head">
+                        <p><b>Employee Turnover Analysis – Tableau, SQL </b></p>
+                    </div>
+                    <div class="img_box">
+                        <img src="images/img3.png" alt="">
+                    </div>
+                    <div class="img_text">
+                        <p>Combined multiple HR datasets using SQL joins; cleaned with Excel Power Query. Designed
+                            Tableau dashboards to highlight risk departments and satisfaction drop-off points. </p>
+                    </div>
+                </div>
+                <div class="col-4 mb-3 column_" id="4" data-bs-toggle="tooltip" data-bs-placement="right"
+                    data-bs-custom-class="custom-tooltip" data-bs-title="Click to view details">
+                    <div class="img_head">
+                        <p><b>Industry Layoff Reporting – SQL, Excel </b></p>
+                    </div>
+                    <div class="img_box">
+                        <img src="images/img4.png" alt="">
+                    </div>
+                    <div class="img_text">
+                        <p>Cleaned and normalized tech layoff data by region and company size.
+                            Built Excel summary tables and SQL-based trend reports for HR consultants. </p>
+                    </div>
+                </div>
+                <div class="col-4 mb-3 column_" id="5" data-bs-toggle="tooltip" data-bs-placement="right"
+                    data-bs-custom-class="custom-tooltip" data-bs-title="Click to view details">
+                    <div class="img_head">
+                        <p><b>Video Game Sales Insights – Tableau, Excel </b></p>
+                    </div>
+                    <div class="img_box">
+                        <img src="images/img5.png" alt="">
+                    </div>
+                    <div class="img_text">
+                        <p>Cleaned multi-year sales datasets using Excel formulas and Power Query.
+                            Built Tableau visualizations to compare top genres, platforms, and regions. </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="sec hidden contactus pt-5">
+            <h1>Contact Me</h1>
+            <span class="one"></span>
+            <span class="two"></span>
+            <div class="any_question text-center">
+                <h3>Have Any Questions ?</h3>
+                <h6>I'm At Your Service</h6>
+            </div>
+            <div class="contact_list_container">
+                <div class="contact_list">
+                    <i class="bi bi-laptop"></i>
+                    <h5>Call me on</h5>
+                    <h6>+234 903 8504 402 </h6>
+                </div>
+                <div class="contact_list">
+                    <i class="bi bi-laptop"></i>
+                    <h5>linkedin</h5>
+                    <a href="https://www.linkedin.com/in/funmibi-iyanda-018bb81b0/">
+                        <h6>My link</h6>
+                    </a>
+                </div>
+                <div class="contact_list">
+                    <i class="bi bi-laptop"></i>
+                    <h5>Email</h5>
+                    <h6>funmibiiyanda1@gmail.com</h6>
+                </div>
+            </div>
+            <div class="any_question text-center">
+                <h3>Email Me From Here</h3>
+                <h6>I Am Very Responsive to Emails</h6>
+            </div>
+            <form action="https://formsubmit.co/839a79721509c3ac4ba4d7f4fae4ed80" method="POST">
+                <div class="row contact_form">
+                    <div class="col-6"><input type="text" name="Name" required placeholder="Name"></div>
+                    <div class="col-6 text-end"><input type="text" name="Email" required placeholder="Email"></div>
+                    <div class="col-12">
+                        <select name="Country" class="countries" id="">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="col-12"><textarea name="Message" required id="" cols="30" rows="10"
+                            placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-end">
+                        <button class="send_msg" type="submit">Send Message</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="Popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    // Initialize tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+    // load countries
+
+    function loadCountries() {
+        let countries = [
+            { "name": "Afghanistan", "code": "AF" },
+            { "name": "land Islands", "code": "AX" },
+            { "name": "Albania", "code": "AL" },
+            { "name": "Algeria", "code": "DZ" },
+            { "name": "American Samoa", "code": "AS" },
+            { "name": "AndorrA", "code": "AD" },
+            { "name": "Angola", "code": "AO" },
+            { "name": "Anguilla", "code": "AI" },
+            { "name": "Antarctica", "code": "AQ" },
+            { "name": "Antigua and Barbuda", "code": "AG" },
+            { "name": "Argentina", "code": "AR" },
+            { "name": "Armenia", "code": "AM" },
+            { "name": "Aruba", "code": "AW" },
+            { "name": "Australia", "code": "AU" },
+            { "name": "Austria", "code": "AT" },
+            { "name": "Azerbaijan", "code": "AZ" },
+            { "name": "Bahamas", "code": "BS" },
+            { "name": "Bahrain", "code": "BH" },
+            { "name": "Bangladesh", "code": "BD" },
+            { "name": "Barbados", "code": "BB" },
+            { "name": "Belarus", "code": "BY" },
+            { "name": "Belgium", "code": "BE" },
+            { "name": "Belize", "code": "BZ" },
+            { "name": "Benin", "code": "BJ" },
+            { "name": "Bermuda", "code": "BM" },
+            { "name": "Bhutan", "code": "BT" },
+            { "name": "Bolivia", "code": "BO" },
+            { "name": "Bosnia and Herzegovina", "code": "BA" },
+            { "name": "Botswana", "code": "BW" },
+            { "name": "Bouvet Island", "code": "BV" },
+            { "name": "Brazil", "code": "BR" },
+            { "name": "British Indian Ocean Territory", "code": "IO" },
+            { "name": "Brunei Darussalam", "code": "BN" },
+            { "name": "Bulgaria", "code": "BG" },
+            { "name": "Burkina Faso", "code": "BF" },
+            { "name": "Burundi", "code": "BI" },
+            { "name": "Cambodia", "code": "KH" },
+            { "name": "Cameroon", "code": "CM" },
+            { "name": "Canada", "code": "CA" },
+            { "name": "Cape Verde", "code": "CV" },
+            { "name": "Cayman Islands", "code": "KY" },
+            { "name": "Central African Republic", "code": "CF" },
+            { "name": "Chad", "code": "TD" },
+            { "name": "Chile", "code": "CL" },
+            { "name": "China", "code": "CN" },
+            { "name": "Christmas Island", "code": "CX" },
+            { "name": "Cocos (Keeling) Islands", "code": "CC" },
+            { "name": "Colombia", "code": "CO" },
+            { "name": "Comoros", "code": "KM" },
+            { "name": "Congo", "code": "CG" },
+            { "name": "Congo, The Democratic Republic of the", "code": "CD" },
+            { "name": "Cook Islands", "code": "CK" },
+            { "name": "Costa Rica", "code": "CR" },
+            { "name": "Cote D\"Ivoire", "code": "CI" },
+            { "name": "Croatia", "code": "HR" },
+            { "name": "Cuba", "code": "CU" },
+            { "name": "Cyprus", "code": "CY" },
+            { "name": "Czech Republic", "code": "CZ" },
+            { "name": "Denmark", "code": "DK" },
+            { "name": "Djibouti", "code": "DJ" },
+            { "name": "Dominica", "code": "DM" },
+            { "name": "Dominican Republic", "code": "DO" },
+            { "name": "Ecuador", "code": "EC" },
+            { "name": "Egypt", "code": "EG" },
+            { "name": "El Salvador", "code": "SV" },
+            { "name": "Equatorial Guinea", "code": "GQ" },
+            { "name": "Eritrea", "code": "ER" },
+            { "name": "Estonia", "code": "EE" },
+            { "name": "Ethiopia", "code": "ET" },
+            { "name": "Falkland Islands (Malvinas)", "code": "FK" },
+            { "name": "Faroe Islands", "code": "FO" },
+            { "name": "Fiji", "code": "FJ" },
+            { "name": "Finland", "code": "FI" },
+            { "name": "France", "code": "FR" },
+            { "name": "French Guiana", "code": "GF" },
+            { "name": "French Polynesia", "code": "PF" },
+            { "name": "French Southern Territories", "code": "TF" },
+            { "name": "Gabon", "code": "GA" },
+            { "name": "Gambia", "code": "GM" },
+            { "name": "Georgia", "code": "GE" },
+            { "name": "Germany", "code": "DE" },
+            { "name": "Ghana", "code": "GH" },
+            { "name": "Gibraltar", "code": "GI" },
+            { "name": "Greece", "code": "GR" },
+            { "name": "Greenland", "code": "GL" },
+            { "name": "Grenada", "code": "GD" },
+            { "name": "Guadeloupe", "code": "GP" },
+            { "name": "Guam", "code": "GU" },
+            { "name": "Guatemala", "code": "GT" },
+            { "name": "Guernsey", "code": "GG" },
+            { "name": "Guinea", "code": "GN" },
+            { "name": "Guinea-Bissau", "code": "GW" },
+            { "name": "Guyana", "code": "GY" },
+            { "name": "Haiti", "code": "HT" },
+            { "name": "Heard Island and Mcdonald Islands", "code": "HM" },
+            { "name": "Holy See (Vatican City State)", "code": "VA" },
+            { "name": "Honduras", "code": "HN" },
+            { "name": "Hong Kong", "code": "HK" },
+            { "name": "Hungary", "code": "HU" },
+            { "name": "Iceland", "code": "IS" },
+            { "name": "India", "code": "IN" },
+            { "name": "Indonesia", "code": "ID" },
+            { "name": "Iran, Islamic Republic Of", "code": "IR" },
+            { "name": "Iraq", "code": "IQ" },
+            { "name": "Ireland", "code": "IE" },
+            { "name": "Isle of Man", "code": "IM" },
+            { "name": "Israel", "code": "IL" },
+            { "name": "Italy", "code": "IT" },
+            { "name": "Jamaica", "code": "JM" },
+            { "name": "Japan", "code": "JP" },
+            { "name": "Jersey", "code": "JE" },
+            { "name": "Jordan", "code": "JO" },
+            { "name": "Kazakhstan", "code": "KZ" },
+            { "name": "Kenya", "code": "KE" },
+            { "name": "Kiribati", "code": "KI" },
+            { "name": "Korea, Democratic People\"S Republic of", "code": "KP" },
+            { "name": "Korea, Republic of", "code": "KR" },
+            { "name": "Kuwait", "code": "KW" },
+            { "name": "Kyrgyzstan", "code": "KG" },
+            { "name": "Lao People\"S Democratic Republic", "code": "LA" },
+            { "name": "Latvia", "code": "LV" },
+            { "name": "Lebanon", "code": "LB" },
+            { "name": "Lesotho", "code": "LS" },
+            { "name": "Liberia", "code": "LR" },
+            { "name": "Libyan Arab Jamahiriya", "code": "LY" },
+            { "name": "Liechtenstein", "code": "LI" },
+            { "name": "Lithuania", "code": "LT" },
+            { "name": "Luxembourg", "code": "LU" },
+            { "name": "Macao", "code": "MO" },
+            { "name": "Macedonia, The Former Yugoslav Republic of", "code": "MK" },
+            { "name": "Madagascar", "code": "MG" },
+            { "name": "Malawi", "code": "MW" },
+            { "name": "Malaysia", "code": "MY" },
+            { "name": "Maldives", "code": "MV" },
+            { "name": "Mali", "code": "ML" },
+            { "name": "Malta", "code": "MT" },
+            { "name": "Marshall Islands", "code": "MH" },
+            { "name": "Martinique", "code": "MQ" },
+            { "name": "Mauritania", "code": "MR" },
+            { "name": "Mauritius", "code": "MU" },
+            { "name": "Mayotte", "code": "YT" },
+            { "name": "Mexico", "code": "MX" },
+            { "name": "Micronesia, Federated States of", "code": "FM" },
+            { "name": "Moldova, Republic of", "code": "MD" },
+            { "name": "Monaco", "code": "MC" },
+            { "name": "Mongolia", "code": "MN" },
+            { "name": "Montenegro", "code": "ME" },
+            { "name": "Montserrat", "code": "MS" },
+            { "name": "Morocco", "code": "MA" },
+            { "name": "Mozambique", "code": "MZ" },
+            { "name": "Myanmar", "code": "MM" },
+            { "name": "Namibia", "code": "NA" },
+            { "name": "Nauru", "code": "NR" },
+            { "name": "Nepal", "code": "NP" },
+            { "name": "Netherlands", "code": "NL" },
+            { "name": "Netherlands Antilles", "code": "AN" },
+            { "name": "New Caledonia", "code": "NC" },
+            { "name": "New Zealand", "code": "NZ" },
+            { "name": "Nicaragua", "code": "NI" },
+            { "name": "Niger", "code": "NE" },
+            { "name": "Nigeria", "code": "NG" },
+            { "name": "Niue", "code": "NU" },
+            { "name": "Norfolk Island", "code": "NF" },
+            { "name": "Northern Mariana Islands", "code": "MP" },
+            { "name": "Norway", "code": "NO" },
+            { "name": "Oman", "code": "OM" },
+            { "name": "Pakistan", "code": "PK" },
+            { "name": "Palau", "code": "PW" },
+            { "name": "Palestinian Territory, Occupied", "code": "PS" },
+            { "name": "Panama", "code": "PA" },
+            { "name": "Papua New Guinea", "code": "PG" },
+            { "name": "Paraguay", "code": "PY" },
+            { "name": "Peru", "code": "PE" },
+            { "name": "Philippines", "code": "PH" },
+            { "name": "Pitcairn", "code": "PN" },
+            { "name": "Poland", "code": "PL" },
+            { "name": "Portugal", "code": "PT" },
+            { "name": "Puerto Rico", "code": "PR" },
+            { "name": "Qatar", "code": "QA" },
+            { "name": "Reunion", "code": "RE" },
+            { "name": "Romania", "code": "RO" },
+            { "name": "Russian Federation", "code": "RU" },
+            { "name": "RWANDA", "code": "RW" },
+            { "name": "Saint Helena", "code": "SH" },
+            { "name": "Saint Kitts and Nevis", "code": "KN" },
+            { "name": "Saint Lucia", "code": "LC" },
+            { "name": "Saint Pierre and Miquelon", "code": "PM" },
+            { "name": "Saint Vincent and the Grenadines", "code": "VC" },
+            { "name": "Samoa", "code": "WS" },
+            { "name": "San Marino", "code": "SM" },
+            { "name": "Sao Tome and Principe", "code": "ST" },
+            { "name": "Saudi Arabia", "code": "SA" },
+            { "name": "Senegal", "code": "SN" },
+            { "name": "Serbia", "code": "RS" },
+            { "name": "Seychelles", "code": "SC" },
+            { "name": "Sierra Leone", "code": "SL" },
+            { "name": "Singapore", "code": "SG" },
+            { "name": "Slovakia", "code": "SK" },
+            { "name": "Slovenia", "code": "SI" },
+            { "name": "Solomon Islands", "code": "SB" },
+            { "name": "Somalia", "code": "SO" },
+            { "name": "South Africa", "code": "ZA" },
+            { "name": "South Georgia and the South Sandwich Islands", "code": "GS" },
+            { "name": "Spain", "code": "ES" },
+            { "name": "Sri Lanka", "code": "LK" },
+            { "name": "Sudan", "code": "SD" },
+            { "name": "Suriname", "code": "SR" },
+            { "name": "Svalbard and Jan Mayen", "code": "SJ" },
+            { "name": "Swaziland", "code": "SZ" },
+            { "name": "Sweden", "code": "SE" },
+            { "name": "Switzerland", "code": "CH" },
+            { "name": "Syrian Arab Republic", "code": "SY" },
+            { "name": "Taiwan, Province of China", "code": "TW" },
+            { "name": "Tajikistan", "code": "TJ" },
+            { "name": "Tanzania, United Republic of", "code": "TZ" },
+            { "name": "Thailand", "code": "TH" },
+            { "name": "Timor-Leste", "code": "TL" },
+            { "name": "Togo", "code": "TG" },
+            { "name": "Tokelau", "code": "TK" },
+            { "name": "Tonga", "code": "TO" },
+            { "name": "Trinidad and Tobago", "code": "TT" },
+            { "name": "Tunisia", "code": "TN" },
+            { "name": "Turkey", "code": "TR" },
+            { "name": "Turkmenistan", "code": "TM" },
+            { "name": "Turks and Caicos Islands", "code": "TC" },
+            { "name": "Tuvalu", "code": "TV" },
+            { "name": "Uganda", "code": "UG" },
+            { "name": "Ukraine", "code": "UA" },
+            { "name": "United Arab Emirates", "code": "AE" },
+            { "name": "United Kingdom", "code": "GB" },
+            { "name": "United States", "code": "US" },
+            { "name": "United States Minor Outlying Islands", "code": "UM" },
+            { "name": "Uruguay", "code": "UY" },
+            { "name": "Uzbekistan", "code": "UZ" },
+            { "name": "Vanuatu", "code": "VU" },
+            { "name": "Venezuela", "code": "VE" },
+            { "name": "Viet Nam", "code": "VN" },
+            { "name": "Virgin Islands, British", "code": "VG" },
+            { "name": "Virgin Islands, U.S.", "code": "VI" },
+            { "name": "Wallis and Futuna", "code": "WF" },
+            { "name": "Western Sahara", "code": "EH" },
+            { "name": "Yemen", "code": "YE" },
+            { "name": "Zambia", "code": "ZM" },
+            { "name": "Zimbabwe", "code": "ZW" }
+        ]
+        let Options
+        Options += '<option value="' + '' + '" selected="' + '">' + 'Select Your Country' + '</option>'
+        countries.forEach(e => {
+            Options += '<option value="' + e.name + '"">' + e.name + '</option>'
+        })
+        console.log(Options)
+        document.querySelector('.countries').innerHTML = Options
+    }
+    loadCountries()
+
+    let dwl = document.querySelector('.dwnlink')
+    dwl.href = window.location.href + '/CV.pdf'
+</script>
+<script src="js/home.js">
+
+
+
+</script>
