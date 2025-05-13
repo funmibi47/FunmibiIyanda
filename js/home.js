@@ -82,5 +82,11 @@ let contents = [
     { name: 'Video Game Sales Insights ', sub1: 'Tableau, Excel', sub2: 'I cleaned and prepared global video game sales data '+
         'to ensure accuracy and consistency for analysis. I then created interactive dashboards to '+
         'track sales trends by region and genre, delivering visual insights into top-performing platforms '+
-        'and publishers. These insights supported strategic decision-making for market targeting and performance evaluation.', sub3: 'https://github.com/funmibi47/Video-Game-Sales-Insights',},
+        'and publishers. These insights supported strategic decision-making for market targeting and performance evaluation.', sub3: 'https://github.com/funmibi47/Video-Game-Sales-Insights'},
+    {name: 'Retail Revenue Analysis & Weekly Trend Segmentation ', sub1: 'Python, Pandas, Matplotlib', sub2: 'Conducted a business analysis project '+
+    'using Python to explore weekly revenue trends and customer behavior across two retail store branches. '+
+    'Cleaned and transformed over 200 transaction records using pandas, created pivot tables and visualizations '+
+    'to highlight high-performing weeks, and applied statistical methods to classify transaction values. '+
+    'The project demonstrates my ability to extract insights and communicate them effectively using data.', sub3: 'https://github.com/funmibi47/Retail-Sales-Data',
+    },
 ]
